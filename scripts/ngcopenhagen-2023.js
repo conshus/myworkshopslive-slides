@@ -27,7 +27,10 @@ const params = (new URL(document.location)).searchParams;
 let username = params.get('name');
 console.log("username: ", username);
 console.log("location.pathname: ", location.pathname);
-const slug = location.pathname.replace('/','').replace('.html','');
+// const slug = location.pathname.replace('/','').replace('.html','');
+const pathParts = location.pathname.split('/');
+const slugWithExtension = pathParts[pathParts.length - 1];
+const slug = slugWithExtension.replace('.html', '');
 console.log('slug: ', slug);  
 
 let conversationId;
