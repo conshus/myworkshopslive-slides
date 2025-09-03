@@ -1,0 +1,16 @@
+.poll-1-option-container, 
+.poll-2-option-container, 
+.poll-3-option-container, 
+.poll-4-option-container, 
+.poll-5-option-container, 
+.poll-6-option-container {
+    margin: 10px;
+}
+.poll-1-option-container button, 
+.poll-2-option-container button, 
+.poll-3-option-container button,
+.poll-4-option-container button, 
+.poll-5-option-container button, 
+.poll-6-option-container button {
+    font-size: 50px;
+}

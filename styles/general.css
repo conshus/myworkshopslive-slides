@@ -1,0 +1,7 @@
+button {
+    cursor: pointer;
+}
+.poll-options-container {
+    display: flex;
+    justify-content: center;
+}
