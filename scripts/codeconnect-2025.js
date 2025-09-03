@@ -4,7 +4,7 @@ console.log('nexmoClient: ', NexmoClient);
 
 // Add Firebase products that you want to use
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js';
-import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js';
+import { getFirestore, doc, getDoc, collection, query, where, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js';
 import { getFunctions, httpsCallable } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-functions.js';
 
 const revealSlides = document.querySelector(".reveal");
@@ -74,9 +74,14 @@ async function getData(){
 async function getUser(){
     return new Promise((resolve) => {
         onAuthStateChanged(auth, async (user) => {
+            console.log("onAuthStateChanged user: ", username);
+            const q =  await getDocs(query(collection(db, "allowed"), where("email","array-contains",username)));
             if(user) {
                 console.log("user: ", user);
                 username = user.email
+                resolve(true);
+            } else if (!q.empty){
+                console.log("is admin");
                 resolve(true);
             } else {
                 console.log("not signed in");
