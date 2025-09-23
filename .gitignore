@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Sass cache
+.sass-cache/
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Compiled CSS/JS (if generated)
+*.css.map
+*.js.map
+
+# npm debug files
+npm-debug.log*
+
+# Reveal.js generated files (if any)
+reveal.js/
+
+# Images cache
+images/cache/
