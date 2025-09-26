@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Dallas 2025</title>
+
+		<link rel="stylesheet" href="./scripts/dist/reveal.css">
+		<link rel="stylesheet" href="./scripts/dist/theme/white.css" id="theme">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="./styles/general.css">
+		<link rel="stylesheet" href="./styles/dallas-2025.css">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+		</style>
+		<!-- Import the component -->
+		<script src="https://unpkg.com/@webcomponents/webcomponentsjs@latest/webcomponents-loader.js"></script>
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script type="module" src="https://unpkg.com/@wcd/conshus.vc-keypad-fork-l0sg7ydr@latest/dist/index.js?module"></script>
+		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<div class="inner-section">
+						<h2>Build a Real-Time Live Stream Platform with Vonage APIs: Video Chat, Text Chat, Screen share & Rewards That Scale</h2>
+						<small>Dallas 2025</small>
+					</div>
+				</section>
+				<section>
+					<div class="inner-section">
+						<h2>I get to talk about Web Components!</h2>
+						<small>Dallas 2025</small>
+					</div>
+				</section>
+<!-- Poll #0 -->
+				<section>
+					<div class="inner-section">
+						<h2>Have a Vonage Developer Account?</h2>
+						<div class="poll-options-container">
+							<div class="poll-0-option-container">
+								<button class="poll-option poll-0" data-id="poll-0" data-option="option-1">Yes</button>
+								<h3 id="poll-0-option-1">0</h3>
+							</div>
+							<div class="poll-0-option-container">
+								<button class="poll-option poll-0" data-id="poll-0" data-option="option-2">No</button>
+								<h3 id="poll-0-option-2">0</h3>
+							</div>
+						</div>
+						if not, you can sign up <a href="https://vonage.dev/4k5unCb" target="_blank">here.</a>
+					</div>
+				</section>
+<!-- Poll #2 -->
+				<section>
+					<div class="inner-section">
+						<h2>Have a GitHub account?</h2>
+						<div class="poll-options-container">
+							<div class="poll-2-option-container">
+								<button class="poll-option poll-2" data-id="poll-2" data-option="option-1">Yes</button>
+								<h3 id="poll-2-option-1">0</h3>
+							</div>
+							<div class="poll-2-option-container">
+								<button class="poll-option poll-2" data-id="poll-2" data-option="option-2">No</button>
+								<h3 id="poll-2-option-2">0</h3>
+							</div>
+						</div>
+						if not, you can sign up <a href="https://github.com/signup" target="_blank">here.</a>
+					</div>
+				</section>
+<!-- Poll #1 -->
+				<section>
+					<div class="inner-section">
+						<h2>Who's heard of Web Components?</h2>
+						<div class="poll-options-container">
+							<div class="poll-1-option-container">
+								<button class="poll-option poll-1" data-id="poll-1" data-option="option-1">Yes</button>
+								<h3 id="poll-1-option-1">0</h3>
+							</div>
+							<div class="poll-1-option-container">
+								<button class="poll-option poll-1" data-id="poll-1" data-option="option-2">No</button>
+								<h3 id="poll-1-option-2">0</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<div class="inner-section">
+						<h2>Goals:</h2>
+						<ul>
+							<li>general understanding</li>
+							<li>show value</li>
+							<li>create and integrate</li>
+							<li>build an application</li>
+							<li>resources</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- <section>
+					<h2>Who's using Web Components?</h2>
+					<img src="images/dallas-2025/webcomponents-companies.jpg"style="max-width: 300px;">
+					<br/><div style="font-size: 14px;"><a href="https://open-wc.org/codelabs/basics/web-components.html#6" target="_blank">Source: Open-WC</a></div>
+				</section>
+
+				<section>
+					<div style="display:flex; align-items: center; justify-content: center;">
+						<div>
+							<img src="images/dallas-2025/1200px-Electronic-Arts-Logo.jpg" style="width: 60vh;">
+							<br/><div style="font-size: 14px;"><a href="https://www.youtube.com/watch?v=FJ2KEvzlyo4" target="_blank">Source: YouTube</a></div>
+						</div>
+						<div>
+							<ul>
+								<li>22 studios, 10,000 people, 30 locations worldwide</li>
+								<li>Various game titles (NBA Live, Star Wars, The Sims, Battlefield, etc)</li>
+								<li>Projects became disjointed</li>
+								<li>Created a design system</li>
+							</ul>
+						</div>		
+					</div>
+				</section> -->
+
+				<section>
+					<div class="inner-section">
+						<h3 style="text-transform: none;">Are Web Components A Thing Yet?</h3>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h3 style="text-transform: none;">AreWebComponentsAThingYet.com</h3>
+						<p>Thanks <a href="https://twitter.com/WestbrookJ" target="_blank">@WestbrookJ</a>!</p>
+					</div>
+				</section>
+
+				<section>
+					<iframe width="100%" height="700px" src="https://arewebcomponentsathingyet.com/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a href="https://arewebcomponentsathingyet.com/" target="_blank">AreWebComponentsAThingYet.com</a>
+				</section>
+
+				<section>
+					<h3>YouTube</h3>
+					<img src="./images/dallas-2025/wc-youtube.jpg"/>
+				</section>
+
+				<section>
+					<h3>GitHub</h3>
+					<img src="./images/dallas-2025/wc-github.jpg"/>
+				</section>
+
+				<section>
+					<h3>Photoshop on the Web</h3>
+					<img src="./images/dallas-2025/photoshop-web.png"/>
+				</section>
+
+				<section>
+					<h2>Have you used?</h2>
+					<div style="display:flex; align-items: flex-start; justify-content: space-between; height:35vh;">
+						<div>
+							video element 
+							<br/>
+							<video controls width="250">
+
+								<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+										type="video/webm">
+							
+								<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+										type="video/mp4">
+							
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+							<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Source: MDN</a></div>
+						</div>
+						<div>
+							audio element 
+							<br/>
+							<figure>
+								<figcaption>Listen to the T-Rex:</figcaption>
+								<audio
+									controls
+									src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+										Your browser does not support the
+										<code>audio</code> element.
+								</audio>
+							</figure>
+							<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Source: MDN</a></div>
+						</div>
+						<div>
+							details element 
+							<br/>
+							<details>
+								<summary>Details</summary>
+								<span style="font-size: 16px;">Something small enough to escape casual notice.</span>
+							</details>
+							<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Source: MDN</a></div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+						<h2>model-viewer</h2>
+						<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls style="border:none; box-shadow: none; height:450px"></model-viewer>
+						<a href="https://modelviewer.dev" target="_blank">modelviewer.dev</a>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h2>WebXR Tic Tac Toe w/ Audio Chat</h2>
+						<video src="images/dallas-2025/ar-demo.mp4" controls width="700"></video>
+						<br><a href="https://xoxr.games" target="_blank">xoXR.games</a>
+					</div>
+				</section>
+
+				<section style="height:100%;">
+					<div class="inner-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+						<div class="side-by-side" style="display: flex;">
+							<div><img src="images/dallas-2025/screenshot-lifelong.jpg" /></div>
+							<div><img src="images/dallas-2025/screenshot-otech-events.jpg" /></div>
+						</div>
+						<img class="dwane" style="height: 300px; position:absolute; bottom:0;" src="images/dallas-2025/dwane-vonage-smile.png"/>
+					</div>
+				</section>
+
+				<section style="height:100%;">
+					<div class="inner-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+						<div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-capco.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-dwanein.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-getowt.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-hiphoptimer.jpg" /></div>
+							</div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-kanye.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-knowbetter.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-myslides-page.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-ticreacttoe.jpg" /></div>
+							</div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-lifelong.jpg" /></div>
+								<div style="width:25%;"></div>
+								<div style="width:25%;"></div>
+								<div><img src="images/dallas-2025/screenshot-otech-events.jpg" /></div>
+							</div>
+						</div>
+						<img class="dwane" style="height: 300px; position:absolute; bottom:0;" src="images/dallas-2025/dwane-vonage-happy-tears.png"/>
+					</div>
+				</section>
+
+				<section style="height:100%;">
+					<div class="inner-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+						<div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-capco.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-dwanein.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-getowt.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-hiphoptimer.jpg" /></div>
+							</div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-kanye.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-knowbetter.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-myslides-page.jpg" /></div>
+								<div><img src="images/dallas-2025/screenshot-ticreacttoe.jpg" /></div>
+							</div>
+							<div class="side-by-side" style="display: flex;">
+								<div><img src="images/dallas-2025/screenshot-lifelong.jpg" /></div>
+								<div style="width:25%;"></div>
+								<div style="width:25%;"></div>
+								<div><img src="images/dallas-2025/screenshot-otech-events.jpg" /></div>
+							</div>
+						</div>
+						<img class="dwane" style="height: 300px; position:absolute; bottom:0;" src="images/dallas-2025/dwane-vonage-sad-tear.png"/>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h4 style="margin:0;">Reusable</h4>
+						<p style="margin:0;"> < dwane-made > </p>
+						<div class="side-by-side" style="display: flex; min-height:500px;">
+							<div style="height:100%;"><img src="images/dallas-2025/dwane-made-data.jpg" style="border:none; box-shadow: none" /></div>
+							<div><img src="images/dallas-2025/dwane-made-component.jpg" /></div>
+							<div style="height:100%;"><img src="images/dallas-2025/dwane-made-updates.jpg" style="border:none; box-shadow: none" /></div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h3 style="margin:0;">Swiss Army Knife</h3>
+						<p style="margin-top:0;"> (Same Component, Multiple uses) </p>
+						<div class="side-by-side" style="display:flex; height:165px; width:100%; justify-content: space-around; align-items: center; position:relative">
+							<div>
+								<small>type="button"</small><br/>
+								<input type="button" />
+							</div>
+							<div>
+								<small>type="checkbox"</small> <br/>
+								<input type="checkbox" />
+							</div>
+							<div>
+								<small>type="color"</small> <br/>
+								<input type="color" />
+							</div>
+						</div>
+						<div class="side-by-side" style="display:flex; height:165px; width:100%; justify-content: space-around; align-items: center; position:relative">
+							<div>
+								<small>type="datetime-local"</small> <br/>
+								<input type="datetime-local" />
+							</div>
+							<div>
+								the humble <br/> 
+								< input / > <br/> 
+								<small>
+									(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN Docs</a>)
+								</small>
+							</div>
+							<div>
+								<small>type="file"</small> <br/>
+								<input type="file" />
+							</div>
+						</div>
+						<div class="side-by-side" style="display:flex; height:165px; width:100%; justify-content: space-around; align-items: center; position:relative">
+							<div>
+								<small>type="radio"</small> <br/>
+								<input type="radio" />
+							</div>
+							<div>
+								<small>type="range"</small> <br/>
+								<input type="range" />
+							</div>
+							<div>
+								<small>type="text"</small> <br/>
+								<input type="text" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h4 style="margin:0;">Multi-use</h4>
+						<p style="margin:0;"> < dwane-timer > </p>
+						<div class="side-by-side" style="display: flex; height:300px;">
+							<div><img src="images/dallas-2025/dwane-timer-1.jpg" /></div>
+							<div><img src="images/dallas-2025/dwane-timer-2.jpg" /></div>
+						</div>
+						<div class="side-by-side" style="display: flex; height:300px;">
+							<div><img src="images/dallas-2025/dwane-timer-3.jpg" /></div>
+							<div><img src="images/dallas-2025/dwane-timer-4.jpg" /></div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Examples and Collections</h2>
+					<!-- <iframe src="https://subsequent-umbra.glitch.me"></iframe> -->
+					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Hfy7niwDhn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					<ul>
+						<li>
+							<a href="https://github.com/mdn/web-components-examples" target="_blank">https://github.com/mdn/web-components-examples</a>
+						</li>
+						<li>
+							<a href="https://www.webcomponents.org/" target="_blank">https://www.webcomponents.org/</a>
+						</li>
+					</ul>
+				</section>
+<!-- Poll #3 -->
+				<section>
+					<div class="inner-section">
+						<h2>Are Web Components getting cooler?</h2>
+						<div class="poll-options-container">
+							<div class="poll-3-option-container">
+								<button class="poll-option poll-3" data-id="poll-3" data-option="option-1">Yes</button>
+								<h3 id="poll-3-option-1">0</h3>
+							</div>
+							<div class="poll-3-option-container">
+								<button class="poll-option poll-3" data-id="poll-3" data-option="option-2">No</button>
+								<h3 id="poll-3-option-2">0</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>What makes a Web Component?</h2>
+					<ul>
+						<li>Custom Elements</li>
+						<li>Shadow DOM</li>
+						<li>HTML Templates</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Custom Elements</h2>
+					<ul>
+						<li>must include a hypen/dash (kebab-case), no single words</li>
+						<li>a class object that defines the behavior</li>
+						<li>which built-in elements it extends, if any</li>
+					</ul>
+					<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements" target="_blank">Source: MDN</a></div>
+				</section>
+
+				<section>
+					<h2>Shadow DOM</h2>
+					<ul>
+						<li>provides encapsulation</li>
+						<li>"...contain the gross" - Paul Lewis (<a href="https://www.youtube.com/watch?v=plt-iH_47GE" target="_blank">link to video</a>)</li>
+						<li>remap events. ie, turn a click event into something more meaningful</li>
+					</ul>
+					<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM" target="_blank">Source: MDN</a></div>
+				</section>
+
+				<section>
+					<h2>HTML Templates</h2>
+					<ul>
+						<li>< template > element's content is not immediately rendered. We define the HTML structure upfront and clone when needed via JavaScript.</li>
+						<li>used to efficiently render HTML and update it when the user interacts with our web component</li>
+						<li> for complex Templates, may be easier to use a library, framework or tool</li>
+					</ul>
+					<div style="font-size: 14px;"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots" target="_blank">Source: MDN</a></div>
+				</section>
+				
+				<section>
+					Here's an example
+					<p class="codepen" data-height="500" data-theme-id="default" data-default-tab="js,result" data-user="conshus" data-slug-hash="NWPzwGO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="odevs-wc-example">
+						<span>See the Pen <a href="https://codepen.io/conshus/pen/NWPzwGO">
+						odevs-wc-example</a> by conshus de OUR show (<a href="https://codepen.io/conshus">@conshus</a>)
+						on <a href="https://codepen.io">CodePen</a>.</span>
+					  </p>
+					  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<p>User's Application</p>
+						<div class="side-by-side" style="display: flex;">
+							<div><img src="images/dallas-2025/wc-graphic-props.jpg" style="border:none; box-shadow: none"/></div>
+							<div><img src="images/dallas-2025/wc-graphic-customelement.jpg" style="border:none; box-shadow: none"/></div>
+							<div><img src="images/dallas-2025/wc-graphic-customevents.jpg" style="border:none; box-shadow: none"/></div>
+						</div>
+						<div class="side-by-side" style="display: flex;">
+							<div style="width:25%;"></div>
+							<div><img src="images/dallas-2025/wc-graphic-methods.jpg" style="border:none; box-shadow: none"/></div>
+							<div style="width:25%;"></div>
+						</div>
+					</div>
+				</section>
+<!-- Poll #4 -->
+				<section>
+					<div class="inner-section">
+						<h2>Are Web Components still cool?</h2>
+						<div class="poll-options-container">
+							<div class="poll-4-option-container">
+								<button class="poll-option poll-4" data-id="poll-4" data-option="option-1">Yes</button>
+								<h3 id="poll-4-option-1">0</h3>
+							</div>
+							<div class="poll-4-option-container">
+								<button class="poll-option poll-4" data-id="poll-4" data-option="option-2">No</button>
+								<h3 id="poll-4-option-2">0</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Tools</h2>
+				</section>
+
+				<section>
+					<iframe width="100%" height="500" src="https://www.webcomponents.dev" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a href="https://www.webcomponents.dev" target="_blank">webcomponents.dev</a> | <a href="https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/board/" target="_blank">1</a> | <a href="https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component" target="_blank">2</a>
+				</section>
+
+				<!-- <section>
+					<iframe width="100%" height="500" src="https://webcomponents.dev/edit/hTA3VgXjm93sVVVhAJqt?embed=1&sv=1&pm=1" title="plainjs-ky1vhfmm" style="border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+					<div style="font-size: 14px;"><a href="https://webcomponents.dev/edit/hTA3VgXjm93sVVVhAJqt/src/index.js?p=stories" target="_blank">link to project</a></div>
+				</section> -->
+
+				<section>
+					<iframe width="100%" height="500" src="https://www.open-wc.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<a href="https://www.open-wc.org" target="_blank">open-wc.org</a>
+				</section>
+
+				<section>
+					<h3>Publish!</h3>
+					<a href="https://npmjs.com/" target="_blank">npmjs.com</a>
+				</section>
+
+				<section>
+					<h2>Content Delivery Network (CDN)</h2>
+					<ul>
+						<li><a href="https://www.jsdelivr.com/" target="_blank">jsdelivr.com</a></li>
+						<li><a href="https://www.skypack.dev/" target="_blank">skypack.dev</a></li>
+						<li><a href="https://unpkg.com/" target="_blank">unpkg.com</a>(not maintained)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Let's Build & Publish!</h2>
+				</section>
+
+				<!-- <section>
+					<div class="inner-section">
+						<p> < vc-keypad > </p>
+						<div class="side-by-side" style="display: flex; text-align: left;">
+							<vc-keypad></vc-keypad>
+							<div style="padding: 20px;">
+								<small>Scaffold using Open-WC and Lit for functionality</small>
+								<div>
+									<p style="margin-bottom: 0;">Properties & Attributes:</p>
+									<small>placeholder, keys, actionText, cancelText <br/> no-asterisk, no-hash, no-display</small>		
+								</div>
+								<div>
+									<p style="margin-bottom: 0;">Method:</p>
+									<small>createAction()</small>		
+								</div>
+								<div>
+									<p style="margin-bottom: 0;">Custom Events:</p>
+									<small>digit-added, digits-sent, action-ended</small>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+				<!-- <section>
+					<div class="inner-section">
+						<p>User's Application</p>
+						<div class="side-by-side" style="display: flex;">
+							<div><img src="images/dallas-2025/wc-graphic-props.jpg" style="border:none; box-shadow: none"/></div>
+							<div><img src="images/dallas-2025/wc-graphic-customelement.jpg" style="border:none; box-shadow: none"/></div>
+							<div><img src="images/dallas-2025/wc-graphic-customevents.jpg" style="border:none; box-shadow: none"/></div>
+						</div>
+						<div class="side-by-side" style="display: flex;">
+							<div style="width:25%;"></div>
+							<div><img src="images/dallas-2025/wc-graphic-methods.jpg" style="border:none; box-shadow: none"/></div>
+							<div style="width:25%;"></div>
+						</div>
+					</div>
+				</section> -->
+
+				<section>
+					<div class="inner-section">
+						<h6>Tool References</h6>
+						<div>
+							<p><a href="https://open-wc.org" target="_blank">Open Web Components (open-wc.org)</a></p>
+							<small>"...provides guides, tools and libraries for developing web components"</small>
+						</div>
+						<div>
+							<p><a href="https://lit.dev" target="_blank">Lit</a></p>
+							<small>"Simple. Fast. Web Components."</small>
+						</div>
+						<div>
+							<p><a href="https://npmjs.com" target="_blank">npmjs.com</a></p>
+							<small>npm publish --access public</small>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section>
+					<h6>Web Component Code</h6>
+					<iframe height="450" style="width: 100%;" src="https://webcomponents.dev/edit/NlZFNRKfCK2EdBYbfHmU/src/index.js?embed=1" title="vc-keypad-workshop" style="border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-scripts allow-same-origin allow-popups">
+					</iframe>
+					<div style="font-size: 14px;"><a href="https://webcomponents.dev/edit/NlZFNRKfCK2EdBYbfHmU/src/index.js?p=stories" target="_blank">link to project</a></div>
+				</section> -->
+				
+
+				<!-- <section>
+					<div class="inner-section">
+						<img class="logo" src="images/dallas-2025/javascript-logo.png" style="border:none; box-shadow: none; width:100px;" />
+						<iframe height="450" style="width: 100%;" scrolling="no" title="vc-keypad-vanillajs-start" src="https://codepen.io/conshus/embed/bGapgaN?height=265&theme-id=default&default-tab=html,result&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href='https://codepen.io/conshus/pen/bGapgaN' target="_blank">vc-keypad-vanillajs-start</a> by conshus de OUR show
+							(<a href='https://codepen.io/conshus' target="_blank">@conshus</a>) on <a href='https://codepen.io' target="_blank">CodePen</a>.
+						</iframe>		
+					</div>
+				</section> -->
+
+				<!-- <section>
+					<div class="inner-section">
+						<img class="logo" src="images/dallas-2025/javascript-logo.png" style="border:none; box-shadow: none; width:100px;" />
+						<iframe height="450" style="width: 100%;" scrolling="no" title="vc-keypad-vanillajs-install" src="https://stackblitz.com/edit/vc-keypad-vanilla?devToolsHeight=33&file=index.js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+						</iframe>
+						<div  style="font-size: 14px;"><a href="https://stackblitz.com/edit/vc-keypad-vanilla" target="_blank">link to project</a>
+					</div>
+				</section> -->
+
+<!-- Poll #5 -->
+				<section>
+					<div class="inner-section">
+						<h2>Where should our Web Component go?</h2>
+						<div class="poll-options-container">
+							<div class="poll-5-option-container">
+								<button class="poll-option poll-5" data-id="poll-5" data-option="option-1">Angular</button>
+								<h3 id="poll-5-option-1">0</h3>
+							</div>
+							<div class="poll-5-option-container">
+								<button class="poll-option poll-5" data-id="poll-5" data-option="option-2">React</button>
+								<h3 id="poll-5-option-2">0</h3>
+							</div>
+							<div class="poll-5-option-container">
+								<button class="poll-option poll-5" data-id="poll-5" data-option="option-3">Vue</button>
+								<h3 id="poll-5-option-3">0</h3>
+							</div>
+						</div>
+						<a href="https://developer.vonage.com/en/video/how-tos/frameworks/angular" target="_blank">Vonage Docs: Frameworks x Web Components</a>
+						<div id="frameworks-choice-links" style="display: none;">
+							<a href="#/angular">Go to Angular</a> | 
+							<a href="#/react">Go to React</a> | 
+							<a href="#/vue">Go to Vue</a>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<section id="angular">
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/angular-logo.svg" style="border:none; box-shadow: none; width: 100px;" />
+							<img src="images/dallas-2025/angular-custom-elements-everywhere.jpg" style="border:none; box-shadow: none"/>
+							<small>(<a href="https://custom-elements-everywhere.com" target="_blank">custom-elements-everywhere.com</a>)</small>
+						</div>
+					</section>
+
+					<section>
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/angular-logo.svg" style="border:none; box-shadow: none; width: 100px;" />
+							<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="vc-keypad workshop Angular Ivy app start" src="https://stackblitz.com/edit/vc-keypad-angular-ivy-start?devToolsHeight=33&file=src/app/app.component.ts" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							</iframe>
+							<div style="font-size: 14px;"><a href="https://stackblitz.com/edit/vc-keypad-angular-ivy-start?file=src%2Fapp%2Fapp.component.ts" target="_blank">link to project</a> | <a href="https://learn.vonage.com/blog/2021/02/16/using-web-components-in-an-angular-application-joyful-fun/" target="_blank">link to blogpost</a></div>			 -->
+						</div>
+					</section>
+				</section>
+
+
+				<section>
+					<section id="react">
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/react-logo.png" style="border:none; box-shadow: none; width:100px;" />
+							<img src="images/dallas-2025/react-custom-elements-everywhere.jpg" style="border:none; box-shadow: none"/>
+							<small>(<a href="https://custom-elements-everywhere.com" target="_blank">custom-elements-everywhere.com</a>)</small>
+						</div>
+					</section>
+
+					<section>
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/react-logo.png" style="border:none; box-shadow: none; width: 100px;" />
+							<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="vc-keypad workshop React app start" src="https://stackblitz.com/edit/vc-keypad-react-start?devToolsHeight=33&file=src/App.js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							</iframe>	
+							<div style="font-size: 14px;"><a href="https://stackblitz.com/edit/vc-keypad-react-start?file=src%2FApp.js" target="_blank">link to project</a> | <a href="https://learn.vonage.com/blog/2020/10/07/using-web-components-in-a-react-application-dr/" target="_blank">link to blogpost</a></div>					 -->
+						</div>
+					</section>							
+				</section>
+
+
+				<section>
+					<section id="vue">
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/vue-logo.png" style="border:none; box-shadow: none; width: 100px;" />
+							<img src="images/dallas-2025/vue-custom-elements-everywhere.jpg" style="border:none; box-shadow: none"/>
+							<small>(<a href="https://custom-elements-everywhere.com" target="_blank">custom-elements-everywhere.com</a>)</small>
+						</div>
+					</section>
+	
+					<section>
+						<div class="inner-section">
+							<img class="logo" src="images/dallas-2025/vue-logo.png" style="border:none; box-shadow: none; width: 100px;" />
+							<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="vc-keypad workshop Vue app start" src="https://stackblitz.com/edit/vc-keypad-vue-start?devToolsHeight=33&file=src/components/HelloWorld.vue" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							</iframe>	 -->
+							<!-- <div style="font-size: 14px;"><a href="https://stackblitz.com/edit/vc-keypad-vue-start?file=src%2Fcomponents%2FHelloWorld.vue" target="_blank">link to project</a> | <a href="https://learn.vonage.com/blog/2020/10/30/use-web-components-in-vue-2-and-3-composition-api-dr/" target="_blank">link to blogpost</a></div>					 -->
+						</div>
+					</section>	
+				</section>
+
+<!-- Poll #6 -->
+				<section>
+					<div class="inner-section">
+						<h2>Are Web Components becoming more awesome?</h2>
+						<div class="poll-options-container">
+							<div class="poll-6-option-container">
+								<button class="poll-option poll-6" data-id="poll-6" data-option="option-1">Yes</button>
+								<h3 id="poll-6-option-1">0</h3>
+							</div>
+							<div class="poll-6-option-container">
+								<button class="poll-option poll-6" data-id="poll-6" data-option="option-2">No</button>
+								<h3 id="poll-6-option-2">0</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Styling</h3>
+					<ul>
+						<li>
+							CSS Custom Properties	
+						</li>
+						<li>
+							::part	
+						</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h3>CSS Custom Properties</h3>
+					<small><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank">MDN</a></small>
+
+					<pre style="font-size: 20px; box-shadow: none;">
+						<code id="css-prop" class="hljs js has-highlights">
+							button {
+								background-color: var(--myelement-button-color, red);
+							  }
+						</code>
+						<code id="css-prop" class="hljs js has-highlights">
+							:root {
+								--myelement-button-color: blue;
+							  }
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>::part</h3>
+					<small><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::part" target="_blank">MDN</a> | <a href="https://meowni.ca/posts/part-theme-explainer/" target="_blank">blog post</a></small>
+
+					<pre style="font-size: 20px; box-shadow: none;">
+						<code id="css-prop" class="hljs js has-highlights">
+							<button part="button">Click Me</button>
+						</code>
+						<code id="css-prop" class="hljs js has-highlights">
+							custom-element::part(button) {
+								color: red;
+								border: 2px green solid;
+								font-size: 30px;
+								background-color: yellow;
+							  }
+						</code>
+					</pre>
+				</section>
+
+				<!-- <section>
+					<h3>Client SDK UI Web Components</h3>
+					<img src="./images/dallas-2025/wc-chat-layout-highlight.jpg"/>
+				</section> -->
+
+				<!-- <section>
+					<h3>vc-text-input</h3>
+					<div>
+						<iframe height="500" style="width: 100%;" scrolling="no" title="vc-text-input-style" src="https://codepen.io/conshus/embed/mdMyrmB?default-tab=css%2Cresult&editable=true&theme-id=39113" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/conshus/pen/mdMyrmB" target="_blank">
+							vc-text-input-style</a> by conshus de OUR show (<a href="https://codepen.io/conshus" target="_blank">@conshus</a>)
+							on <a href="https://codepen.io" target="_blank">CodePen</a>.
+						</iframe>
+					</div>
+				</section> -->
+
+				<!-- <section>
+					<h3>vc-members</h3>
+					<div>
+						<iframe height="500" style="width: 100%;" scrolling="no" title="vc-members-style" src="https://codepen.io/conshus/embed/ZEJYBbO?default-tab=css%2Cresult&editable=true&theme-id=39113" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/conshus/pen/ZEJYBbO" target="_blank">
+							vc-members-style</a> by conshus de OUR show (<a href="https://codepen.io/conshus" target="_blank">@conshus</a>)
+							on <a href="https://codepen.io" target="_blank">CodePen</a>.
+						</iframe>
+					</div>
+				</section> -->
+				<!-- <section>
+					<h3>vc-keypad</h3>
+					<div>
+						<iframe height="500" style="width: 100%;" scrolling="no" title="vc-keypad-style" src="https://codepen.io/conshus/embed/VwzYaEg?default-tab=css%2Cresult&editable=true&theme-id=39113" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/conshus/pen/VwzYaEg" target="_blank">
+							vc-keypad-style</a> by conshus de OUR show (<a href="https://codepen.io/conshus" target="_blank">@conshus</a>)
+							on <a href="https://codepen.io" target="_blank">CodePen</a>.
+						</iframe>
+					</div>
+				</section> -->
+
+				<!-- <section>
+					<h2>New stuff!!</h2>
+					<h3>Video Web Components</h3>
+					<p><a href="https://github.com/opentok/web-components" target="_blank">https://github.com/opentok/web-components</a></p>
+				</section> -->
+
+				<section>
+					<h2>Let's Build! (again)</h2>
+					<p>What we signed up for!</p>
+				</section>
+
+				<section>
+					<h2>Credentials</h2>
+					<p>Got a Vonage Video application?</p>
+					<p>No: <a href="https://github.com/Vonage-Community/sample-video-node-learning_server" target="_blank">Node.js Learning server</a></p>
+					<p>Yes: <a href="https://tools.vonage.com/video/playground" target="_blank">Vonage Video API Playground</a></p>
+				</section>
+
+				<section>
+					<h2>Web Application</h2>
+					<p><a href="https://github.com/Vonage-Community/web_components-video_api-javascript" target="_blank">Vonage Video API Web Components</a></p>
+					<p><a href="https://github.com/Vonage-Community/workshop-video_api-personal_live_stream_platform" target="_blank">Starter project</a></p>
+				</section>
+				<!-- <section>
+					<h2>What's missing?</h2>
+				</section> -->
+
+				<!-- <section>
+					<h2>Chat!</h2>
+					<p><a href="https://studio.webcomponents.dev/edit/ZtSVnJnCusyWUyaSk8fz/src/index.js?p=stories" target="_blank">< video-chat > code </a></p>
+					<p><a href="https://tokbox.com/developer/guides/signaling/js/" target="_blank">Vonage Video Signaling API</a></p>
+				</section> -->
+
+				<!-- <section>
+					<h2>Add to the project</h2>
+					<pre style="font-size: 20px; box-shadow: none;">
+						<code id="css-prop" class="hljs js has-highlights">
+							// in the HTML files
+							<script
+								type="module"
+								src="https://unpkg.com/@wcd/conshus.litelementjs-lmfuezva@latest/dist/index.js?module"
+							></script>
+							
+							// place inside chat-container
+							<video-chat></video-chat>
+						</code>
+						<code id="css-prop" class="hljs js has-highlights">
+							// in JS client files
+							const chatEl = document.querySelector('video-chat');
+
+							// set properties in initializeSession()
+							chatEl.session = session;
+							chatEl.username = nameInput.value;
+						  
+						</code>
+					</pre>
+				</section> -->
+
+				<section>
+					<div class="inner-section">
+						<p style="margin: 10px 0 0 0;">€10/$10 Vonage coupon code:</p>
+						<button id="coupon-button">Show me the Code</button>
+						<div id="coupon-code" style="display:none;">€: 25KQRTLS10 $: 25CECTBDUS</div>
+						<p style="margin: 10px 0 0 0;">Redeem in your account:</p>
+						<small><a href="https://dashboard.vonage.com/coupons" target="_blank">https://dashboard.vonage.com/coupons</a></small>	
+					</div>
+				</section>
+
+				<section>
+					<div class="inner-section">
+						<h4 style="margin:0;">Thanks!</h4>
+						<!-- <p style="margin: 10px 0 0 0;"> Web Components Blog Series </p>
+						<small><a href="https://dwane.in/vonage" target="_blank">https://dwane.in/vonage</a></small> -->
+						<!-- <p style="margin: 10px 0 0 0;"> Video Web Components </p>
+						<small><a href="https://github.com/opentok/web-components" target="_blank">https://github.com/opentok/web-components</a></small> -->
+						<!-- <p style="margin: 10px 0 0 0;"> Chat Web Components </p>
+						<small><a href="https://github.com/nexmo-community/clientsdk-ui-js" target="_blank">https://github.com/nexmo-community/clientsdk-ui-js</a></small> -->
+						<p style="margin: 10px 0 0 0;">How was it?</p>
+						<small><a href="https://www.linkedin.com/posts/dwane-hemmings_im-up-bright-and-early-to-do-some-more-activity-7368967853452075008-gMeH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAJBCkUB1un_8QQ_w7mJp4Fy0Kf26qSfPjs" target="_blank">LinkedIn</a> - <a href="https://x.com/lifelongdev/status/1963202955231867303" target="_blank">Twitter / X</a></small>
+						<!-- <p style="margin: 10px 0 0 0;">Check out our APIs:</p> 
+						<small><a href="https://developer.vonage.com" target="_blank">https://developer.vonage.com</a></small> -->
+						<p style="margin: 10px 0 0 0;">Event Feedback Form:</p> 
+						<small><a href="https://wkf.ms/4krDUCH" target="_blank">https://wkf.ms/4krDUCH</a></small>
+						<!-- <p style="margin: 10px 0 0 0;">€10 Vonage coupon code:</p>
+						<button id="coupon-button">Show me the Code</button>
+						<div id="coupon-code" style="display:none;">23CJSSP10</div>
+						<p style="margin: 10px 0 0 0;">Redeem in your account:</p>
+						<small><a href="https://dashboard.nexmo.com/coupons" target="_blank">https://dashboard.nexmo.com/coupons</a></small> -->
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+
+		<!-- ******* Load nexmoClient from a CDN ****** -->
+		<script type="module" src="https://unpkg.com/nexmo-client@latest/dist/nexmoClient.js?module"></script>
+		<!-- <script src="./scripts/dist/reveal.js"></script> -->
+				<!-- Reveal 4.1.0 -->
+				<script src="./scripts/reveal410/dist/reveal.js"></script>
+				<script src="./scripts/reveal410/plugin/zoom/zoom.js"></script>
+				<script src="./scripts/reveal410/plugin/notes/notes.js"></script>
+				<script src="./scripts/reveal410/plugin/search/search.js"></script>
+				<script src="./scripts/reveal410/plugin/markdown/markdown.js"></script>
+				<script src="./scripts/reveal410/plugin/highlight/highlight.js"></script>
+		
+		<script src="./scripts/dallas-2025.js" type="module"></script>
+		<script>
+			// Reveal.initialize({
+			// 	center: true,
+			// 	history: true,
+
+			// 	// transition: 'slide',
+			// 	// transitionSpeed: 'slow',
+			// 	// backgroundTransition: 'slide'
+			// });
+			function copyCode(elementId){
+				const elementRef= document.querySelector(elementId);
+				navigator.clipboard.writeText(elementRef.innerText).then(()=>{
+					console.log('Successful copy!');
+				}, ()=>{
+					console.log('Failed copy!');
+				});
+			}
+
+		</script>
+
+	</body>
+</html>
